@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 
-                    sh 'maven clean compile'
+                    sh 'mvn clean compile'
                 
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
     
-                    sh 'maven test'
+                    sh 'mvn test'
                 
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 
-                    sh 'maven deploy'
+                    sh 'mvn deploy'
                 
             }
         }
